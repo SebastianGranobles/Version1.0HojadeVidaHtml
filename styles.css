@@ -1,0 +1,139 @@
+body {
+   
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Centra los elementos de la pagina. */
+    font-family: Arial, sans-serif; 
+    text-align: center;
+    padding: 30px;
+    }
+    h2{
+        font-family: Verdana;
+        color: #ddfcfc;
+        text-align: center;
+        background-color: #038C8C;
+         
+             @media screen {
+                
+             } 
+                
+             
+            from {
+                opacity: 0;
+                scale: 25%;
+            }
+            to{
+                opacity: 5;
+                scale: 100%;
+            } 
+        
+         .perfil {
+            animation-timeline: scroll();
+            animation-timeline: scroll(scroller axis);
+            container{
+                height: 18px;
+                overflow-y: scroll;
+                scroll-timeline-name:
+                squareTimeline;
+                position: relative;
+             }
+             @keyframes scroll-img {
+                0% {
+                  scale: 30%;
+                  opacity: 0;
+                }
+                50%{
+                  scale: 60%;
+                  opacity: 0.8;
+                }
+                100% {
+                  scale: 100%;
+                  opacity: 1;
+                }
+              }
+               img {
+                view-timeline-name: --image-scroll; /* create the element (--image-scroll) */
+                view-timeline-axis: block; 
+              }
+               img {
+                animation-timeline: --image-scroll; /* binding element (--image-scroll) with the scroll */
+                animation-name: scroll-img;
+                
+                view-timeline-name: --image-scroll; /* create the element (--image-scroll) */
+                view-timeline-axis: block; 
+              } 
+        }
+    }
+         
+h3{
+    font-family: Verdana;
+    color: #111111;
+}
+p{
+    font-family: Verdana;
+    color: #262626;
+    font-size: large;
+}
+li{
+    font-family: Verdana;
+    color: #262626;
+    font-size: large;
+}
+th{
+    font-family: Verdana;
+    color: #111111;
+}
+fieldset{
+    border-color: #04D9D9;
+    margin-top: 1em;
+    background-color: #F2F2F2;
+}
+legend{
+    border:2px solid #038C8C;
+    font-family: Verdana;
+    border-radius:8px;
+    font-size: large;
+    color: #ddfcfc;
+    background-color: #038C8C;
+}
+#presentacion{
+    margin: 15px;
+    width: 19em;
+    float: left;
+    height: 98%;
+    background-color: #04D9D9;
+}
+
+#contenido { 
+    margin: 10px;
+    width: calc(100% - 22em);
+    float: right;
+}
+.col{
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+#idioma{
+    display: flex;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.perfil{
+    display: flex;
+    justify-content: center;
+}
+
+.redes a{
+    margin: 10px 14px;
+    top: 50%;
+}
+
+.redes p{
+    display: block;
+    margin: 5px;
+}
+
+p{
+    margin: 10px 0px;
+}
+  
